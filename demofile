@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "Starting build process..."
+
+# Create a build directory
+mkdir -p build
+
+# Copy files to build directory
+cp index.html build/
+cp style.css build/
+cp script.js build/
+
+# Add a timestamp to indicate when the build happened
+echo "Build completed on $(date)" > build/build_info.txt
+
+echo "Build completed successfully!"
